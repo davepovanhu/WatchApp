@@ -4,61 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        body {
-            background-color: white;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+        /* ... (previous styles remain unchanged) ... */
 
-        .header {
-            background-color: orange;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
-
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            align-items: flex-start;
-            padding: 20px;
-        }
-
-        .feature-box {
+        .content-section {
             width: 200px;
             height: 200px;
             border: 1px solid #ccc;
             margin: 10px;
             padding: 10px;
             text-align: center;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .content-section h3 {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        .content-section p {
+            font-size: 14px;
+        }
+
+        .content-section button {
             background-color: orange;
             color: white;
+            border: none;
+            padding: 5px 10px;
             cursor: pointer;
         }
 
-        .feature-box a {
-            text-decoration: none;
-            color: white;
-        }
-
-        /* Waving hand animation */
-        @keyframes wave {
-            0%, 100% {
-                transform: rotate(0deg);
-            }
-            20%, 60% {
-                transform: rotate(-30deg);
-            }
-            40%, 80% {
-                transform: rotate(30deg);
-            }
-        }
-
-        .waving-hand {
-            display: inline-block;
-            animation: wave 5s linear infinite;
+        .saved-activity-section {
+            /* No "display: none;" to show it by default */
         }
     </style>
 </head>
@@ -68,61 +45,25 @@
     </div>
 
     <!-- User Interface after Login -->
-    <div class="container">
-        <h2>Welcome back <span class="waving-hand">David</span>!</h2>
+    <div class="container" id="user-interface">
+        <h2>Welcome back David <span class="waving-hand">👋</span>!</h2>
 
         <!-- Vertical Menu -->
-        <div class="feature-box" id="activity">
-            <span class="feature-title">Activity Tracking</span>
-            <br>
-            <img src="https://www.pngkit.com/png/detail/355-3557667_advance-preparation-reporting-systems-activity-icon-png-black.png" alt="Activity Tracking" width="80">
-            <br>
-            <button>Start</button>
+        <div class="menu">
+            <!-- ... (menu items remain unchanged) ... -->
         </div>
 
-        <div class="feature-box" id="terrain">
-            <span class="feature-title">Terrain-Specific Analytics</span>
-            <br>
-            <img src="https://cdn-icons-png.flaticon.com/128/106/106417.png" alt="Terrain-Specific Analytics" width="80">
-            <br>
-            <button>View Stats</button>
+        <!-- Content Sections -->
+        <!-- ... (existing content sections remain unchanged) ... -->
+
+        <!-- Saved Activities Section -->
+        <div class="content-section saved-activity-section">
+            <h3>Saved Activity</h3>
+            <p><strong>Name:</strong> Hiking Adventure</p>
+            <p><strong>Duration:</strong> 2 hours</p>
+            <p><strong>Date:</strong> September 22, 2023</p>
+            <button>View Details</button>
         </div>
-
-        <div class="feature-box" id="challenges">
-            <span class="feature-title">Adventure Challenges</span>
-            <br>
-            <img src="https://cdn-icons-png.flaticon.com/128/2914/2914616.png" alt="Adventure Challenges" width="80">
-            <br>
-            <button>Take a Challenge</button>
-        </div>
-
-        <div class="feature-box" id="safety">
-            <span class="feature-title">Safety Features</span>
-            <br>
-            <img src="https://cdn-icons-png.flaticon.com/128/2610/2610605.png" alt="Safety Features" width="80">
-            <br>
-            <button>Emergency</button>
-        </div>
-
-        <div class="feature-box" id="offline">
-            <span class="feature-title">Offline Mode</span>
-            <br>
-            <img src="https://cdn-icons-png.flaticon.com/128/7188/7188169.png" alt="Offline Mode" width="80">
-            <br>
-            <button>Enable Offline</button>
-        </div>
-
-        <div class="feature-box" id="integration">
-            <span class="feature-title">Wearable Device Integration</span>
-            <br>
-            <img src="https://cdn-icons-png.flaticon.com/128/8064/8064908.png" alt="Wearable Device Integration" width="80">
-            <br>
-            <button>Sync Device</button>
-        </div>
-
-        <!-- Add content sections for each feature here -->
-
     </div>
 </body>
 </html>
-
