@@ -37,6 +37,47 @@
         .saved-activity-section {
             /* No "display: none;" to show it by default */
         }
+
+        /* Safety Features Section Styling */
+        .safety-features-section {
+            /* No "display: none;" to show it by default */
+        }
+
+        .safety-button {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            background-color: orange;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        /* SOS Alerts Styling */
+        .sos-alerts-section {
+            /* Display by default */
+        }
+
+        /* Location Sharing Styling */
+        .location-sharing-section {
+            /* Display by default */
+        }
+
+        /* Weather Updates Styling */
+        .weather-updates-section {
+            /* Display by default */
+        }
+
+        .map {
+            width: 100%;
+            height: 200px;
+            background-color: #f4f4f4;
+        }
+
+        .weather-image {
+            max-width: 100%;
+            height: auto;
+        }
     </style>
 </head>
 <body>
@@ -56,13 +97,32 @@
         <!-- Content Sections -->
         <!-- ... (existing content sections remain unchanged) ... -->
 
-        <!-- Saved Activities Section -->
-        <div class="content-section saved-activity-section">
-            <h3>Saved Activity</h3>
-            <p><strong>Name:</strong> Hiking Adventure</p>
-            <p><strong>Duration:</strong> 2 hours</p>
-            <p><strong>Date:</strong> September 22, 2023</p>
-            <button>View Details</button>
+        <!-- Safety Features Section -->
+        <div class="content-section safety-features-section">
+            <h3>Safety Features</h3>
+            <button class="safety-button">SOS Alerts</button>
+            <button class="safety-button">Real-time Location Sharing</button>
+            <button class="safety-button">Weather Updates</button>
+        </div>
+
+        <!-- SOS Alerts Section -->
+        <div class="content-section sos-alerts-section">
+            <h3>SOS Alerts</h3>
+            <p>You have been Walking for too long. Take a break!</p>
+        </div>
+
+        <!-- Location Sharing Section -->
+        <div class="content-section location-sharing-section">
+            <h3>Real-time Location Sharing</h3>
+            <div class="map">
+                <!-- Display Google Maps map here (you can embed a map iframe or use the Google Maps API) -->
+            </div>
+        </div>
+
+        <!-- Weather Updates Section -->
+        <div class="content-section weather-updates-section">
+            <h3>Weather Updates</h3>
+            <img class="weather-image" src="https://cdn.w600.comps.canstockphoto.com/windhoek-namibia-infographic-clip-art-vector_csp33382765.jpg" alt="Weather Update">
         </div>
     </div>
 </body>
